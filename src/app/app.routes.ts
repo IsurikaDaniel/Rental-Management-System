@@ -11,11 +11,11 @@ export const routes: Routes = [
         component: CustomerdashbordComponent
     },
     {
-        path: "Dashboard",
+        path: "dashboard",
         component: AdmindashbordComponent
     },
     {
-        path: "Orders",
+        path: "orders",
         component: ViewrentitmesComponent
     },
     {
