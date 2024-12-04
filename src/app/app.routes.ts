@@ -4,6 +4,7 @@ import { AdmindashbordComponent } from './common/admindashbord/admindashbord.com
 import { ViewrentitmesComponent } from './pages/viewrentitmes/viewrentitmes.component';
 import { AddcustomerformComponent } from './common/addcustomerform/addcustomerform.component';
 import { AdditmsformComponent } from './common/additmsform/additmsform.component';
+import { ViewallComponent } from './common/viewall/viewall.component';
 
 export const routes: Routes = [
     {
@@ -25,6 +26,10 @@ export const routes: Routes = [
     {
         path: "Products",
         component: AdditmsformComponent
+    },
+    {
+        path: "all",
+        component: ViewallComponent
     }
 
 ];

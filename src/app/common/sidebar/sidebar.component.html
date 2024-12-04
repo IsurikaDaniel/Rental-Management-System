@@ -35,7 +35,12 @@
           Products management
         </a>
       </li>
-      
+      <li (click)="changeSelectSideBar('all')" routerLink="/all">
+        <a [ngClass]="{'active': SelectSideBar == 'all'}" class="nav-link text-white">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+          View all 
+        </a>
+      </li>
     </ul>
     <hr>
     <div class="dropdown">

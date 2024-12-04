@@ -13,17 +13,6 @@
     margin-bottom: 15px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="date"],
-select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
 button {
     width: 100%;
     padding: 10px;
@@ -39,24 +28,5 @@ button:hover {
     background-color: #0b2b70;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .container {
-        max-width: 90%;
-    }
-}
 
 
-.custom-radio:checked {
-
-    background-color: #05173f;
-    border-color: #05173f;
-}
-
-.custom-radio:checked+.form-check-label {
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    color: #05173f;
-    font-weight: bold;
-}
