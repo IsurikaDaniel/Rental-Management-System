@@ -1,2 +1,32 @@
-<p>viewrentitmes works!</p>
-hii rent items
+<div class="container ">
+    <h3>Add Customer <br>Details</h3>
+    <div class="form-group mt-3">
+        <input type="name" class="form-control" id="inputEmail4" placeholder="ID" [(ngModel)]="rental.name">
+    </div>
+    <div class="form-group mt-3">
+        <label for="">Rental Date</label>
+        <input type="date" class="form-control" id="inputPassword4" 
+            [(ngModel)]="rental.rentalDate">
+    </div>
+    <div class="form-group mt-3">
+        <label for="">Return Date</label>
+        <input type="date" class="form-control" id="inputAddress" 
+            [(ngModel)]="rental.returnDate">
+    </div>
+    <div class="form-group mt-3">
+        <label for="">Due Date</label>
+        <input type="date" class="form-control" id="inputAddress" [(ngModel)]="rental.dueDate">
+    </div>
+    <div class="form-group mt-3">
+        <label for="">Fine</label>
+        <input type="txt" class="form-control" id="inputAddress"  [(ngModel)]="rental.fine">
+    </div>
+    <div class="form-group mt-3">
+        <label for="">Total Cost</label>
+        <input type="txt" class="form-control" id="inputAddress" 
+            [(ngModel)]="rental.totalCost">
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary" (click)="addRental()">Add</button>
+    </div>
+</div>

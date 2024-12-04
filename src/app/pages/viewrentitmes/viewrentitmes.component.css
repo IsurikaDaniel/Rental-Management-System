@@ -1,0 +1,54 @@
+
+.container {
+    background: rgba(179, 179, 180, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+h3{
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #05173f;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b2b70;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+
+.custom-radio:checked {
+
+    background-color: #05173f;
+    border-color: #05173f;
+}
+
+.custom-radio:checked+.form-check-label {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    color: #05173f;
+    font-weight: bold;
+}
