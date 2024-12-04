@@ -11,12 +11,6 @@
           Home
         </a>
       </li>
-      <li (click)="changeSelectSideBar('Dashboard')" routerLink="/dashboard">
-        <a [ngClass]="{'active': SelectSideBar == 'Dashboard'}" class="nav-link text-white">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-          Dashboard
-        </a>
-      </li>
       <li (click)="changeSelectSideBar('Orders')" routerLink="/orders">
         <a [ngClass]="{'active': SelectSideBar == 'Orders'}" class="nav-link text-white">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
