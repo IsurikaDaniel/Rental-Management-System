@@ -5,6 +5,7 @@ import { ViewrentitmesComponent } from './pages/viewrentitmes/viewrentitmes.comp
 import { AddcustomerformComponent } from './common/addcustomerform/addcustomerform.component';
 import { AdditmsformComponent } from './common/additmsform/additmsform.component';
 import { ViewallComponent } from './common/viewall/viewall.component';
+import { BillComponent } from './pages/bill/bill.component';
 
 export const routes: Routes = [
     {
@@ -30,6 +31,9 @@ export const routes: Routes = [
     {
         path: "all",
         component: ViewallComponent
+    },{
+        path: "bill",
+        component: BillComponent
     }
 
 ];

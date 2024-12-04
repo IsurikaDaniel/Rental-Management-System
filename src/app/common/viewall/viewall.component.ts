@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
 export class ViewallComponent {
 
   public hardwareItemsList:any = [];
-  // public searchByService: string = '';
+  // public searchByID: string = '';
 
   constructor(private http:HttpClient){
      this.loadTable();  
@@ -49,23 +49,23 @@ public hardwareItemsTemp:any={}
     })
   }
 
-    // Search appointments by Patient ID
-    // searchAppointmentsByService(): void {
-    //   if (this.searchByService.trim() === '') {
-    //     alert('Please enter a valid Patient ID.');
+    // Search item by Patient ID
+    // searchietemsById(): void {
+    //   if (this.searchByid.trim() === '') {
+    //     alert('Please enter a valid ID.');
     //     return;
     //   }
   
-    //   const apiUrl = `http://localhost:8080/appointment/search-by-patientId/${this.searchByService}`;
+    //   const apiUrl = `http://localhost:8080/hardwareItems/search-by-Id/${this.searchByid}`;
   
     //   this.http.get(apiUrl).subscribe(
     //     (data: any) => {
     //       console.log(data);
-    //       this.appointmentList = Array.isArray(data) ? data : [data]; // Ensure data is an array
+    //       this.ItemList = Array.isArray(data) ? data : [data]; // Ensure data is an array
     //     },
     //     (error) => {
-    //       console.error('Error searching appointments:', error);
-    //       alert('No appointments found for the given Patient ID.');
+    //       console.error('Error searching item:', error);
+    //       alert('No items found for the given Patient ID.');
     //     }
     //   );
     // }

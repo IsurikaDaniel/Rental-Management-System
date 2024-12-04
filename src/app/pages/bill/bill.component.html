@@ -1,0 +1,52 @@
+<div class="container mt-4">
+    <h2>Simple Bill Generator</h2>
+  
+    <!-- Add Item Form -->
+    <form (ngSubmit)="addItem(itemName.value, itemPrice.value, itemQuantity.value)" class="row g-3">
+      <div class="col-md-4">
+        <input type="text" class="form-control" #itemName placeholder="Item Name" required />
+      </div>
+      <div class="col-md-3">
+        <input type="number" class="form-control" #itemPrice placeholder="Price" min="0" required />
+      </div>
+      <div class="col-md-3">
+        <input type="number" class="form-control" #itemQuantity placeholder="Quantity" min="1" required />
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-primary w-100" (click)="addItem(itemName.value, itemPrice.value, itemQuantity.value)">Add</button>
+      </div>
+    </form>
+  
+    <!-- Items Table -->
+    <table class="table table-bordered table-hover mt-4">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Item Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.price | currency }}</td>
+          <td>{{ item.quantity }}</td>
+          <td>{{ item.total | currency }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- Total Amount -->
+    <div class="d-flex justify-content-end mt-3">
+      <h4>Total: {{ totalAmount | currency }}</h4>
+    </div>
+  
+    <!-- Clear Button -->
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-danger mt-2" (click)="clearItems()">Clear All</button>
+    </div>
+  </div>
+  

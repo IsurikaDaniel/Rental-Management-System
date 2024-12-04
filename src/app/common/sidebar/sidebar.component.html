@@ -41,6 +41,12 @@
           View all 
         </a>
       </li>
+      <li (click)="changeSelectSideBar('bill')" routerLink="/bill">
+        <a [ngClass]="{'active': SelectSideBar == 'bill'}" class="nav-link text-white">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+          Bill genarate
+        </a>
+      </li>
     </ul>
     <hr>
     <div class="dropdown">
